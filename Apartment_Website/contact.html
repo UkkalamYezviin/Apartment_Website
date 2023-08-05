@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Community</title>
+    <script src="https://kit.fontawesome.com/1ff714dd73.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-image: linear-gradient(#033747,#012733);
+    }
+    nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: rgb(233, 122, 30);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    }
+    nav ul{
+    float: right;
+    }
+    nav li{
+    display: inline-block;
+    list-style: none;
+    }
+    nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding:0px 30px;
+    color:white;
+    text-decoration: none;
+    }
+    nav li a:hover{
+    color: #ff8c69;
+    transition: all 0.4s ease 0s;
+    }
+    body {
+    width: 100%;
+    height: 100vh;
+    background-image:   linear-gradient(180deg,
+                                    rgba(0,0,0,0.3) 0%,
+                                    rgba(0,0,0,0.8) 100%),
+                                url("https://images.unsplash.com/photo-1520923642038-b4259acecbd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=819&q=80");
+    background-size: cover;
+    background-position: center;
+}
+    .kindha {
+            font-size: 30px;
+            text-align: left;
+            padding: 3%;
+            /*margin: ;*/
+            color: white;
+            
+            }
+        .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+        }
+
+        #check{
+        display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+            }
+            nav ul li a{
+            font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px){
+            .checkbtn{
+            display: block;
+        }
+            ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+        }
+        nav ul li a{
+        font-size: 20;
+    
+        }
+        a:hover,a.active{
+        background: none;
+        color: orange;
+        }
+        #check:checked ~ ul{
+        left: 0;
+        }
+        }
+        .container {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: aliceblue;
+        }
+        iframe {
+            filter: invert(100%);
+        }
+
+    </style>
+    </head>
+        <body>
+            <nav>
+                <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+            <div class="logo">
+                <p>community</p>
+            </div>
+            <ul>
+                <li><a href="First.html">Home</a></li>
+                <li><a href="http://localhost/login%20system/Apartment_Website/index.php">Residents</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="http://localhost/login%20system/Apartment_Website/register_form.php" target="_blank">Sign up</a></li>
+            </ul>
+            </nav>
+        
+
+        <p class="kindha"> Address <br> <br>POOJITHA MEREDIAN <br> Jagruthi Colony road no 1 Hyderabad
+            <br> Pincode-500084 <br>    
+            Contact No - 0000 000 00 0000 
+        </p>
+        <div class="container">
+            <h1>Location Map</h1>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8367332623916!2d78.36154747492105!3d17.467526800492042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93cad506b90f%3A0xf42a145463f7d276!2sPoojitha%20Meridian!5e0!3m2!1sen!2sin!4v1690794754256!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+        
+
+
+    </body>
+
+</html>
